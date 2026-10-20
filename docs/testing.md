@@ -4,7 +4,7 @@
 
 New reference implementation. Real sensor model, actual wiring, enrollment, OLED behaviour, supply stability and attendance measurements are unverified. The repository includes no actual participant records or biometrics.
 
-Host tests exercise ID bounds, duplicates, committing only after acceptance, independent IDs, fresh sessions and timing rollover. GitHub Actions builds for the classic ESP32 target with pinned dependencies. Record the successful run link after execution. Build success does not establish recognition accuracy or hardware operation.
+Host tests exercise ID bounds, duplicates, committing only after acceptance, independent IDs, fresh sessions and timing rollover. GitHub Actions builds for the classic ESP32 target with pinned dependencies. Both jobs passed in [verified run #1](https://github.com/Jayshah3309/esp32-fingerprint-attendance/actions/runs/39402001377), commit `e1c371b`, on 20 October 2026. The Arduino setup action emitted a runtime deprecation warning; it did not fail the build. Build success does not establish recognition accuracy or hardware operation.
 
 ## Bench checklist
 
