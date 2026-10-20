@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="770" viewBox="0 0 1200 770"><rect width="1200" height="770" fill="#f8fafc"/>
+<text x="30" y="42" font-family="Arial,sans-serif" font-size="26" fill="#16324f">ESP32 FINGERPRINT ATTENDANCE · REFERENCE WIRING</text>
+<text x="30" y="77" font-family="Arial,sans-serif" font-size="18" fill="#16324f">Classic ESP32-WROOM-32 · proposed pins · confirm exact sensor and OLED before wiring</text>
+<rect x="40" y="140" width="300" height="370" rx="8" fill="#dbeafe" stroke="#94a3b8"/>
+<text x="65" y="180" font-family="Arial,sans-serif" font-size="23" fill="#16324f">ESP32-WROOM-32</text>
+<text x="65" y="225" font-family="Arial,sans-serif" font-size="18" fill="#16324f">USB → board power</text>
+<text x="65" y="263" font-family="Arial,sans-serif" font-size="18" fill="#16324f">GPIO16 = UART RX</text>
+<text x="65" y="301" font-family="Arial,sans-serif" font-size="18" fill="#16324f">GPIO17 = UART TX</text>
+<text x="65" y="339" font-family="Arial,sans-serif" font-size="18" fill="#16324f">GPIO21 = I²C SDA</text>
+<text x="65" y="377" font-family="Arial,sans-serif" font-size="18" fill="#16324f">GPIO22 = I²C SCL</text>
+<text x="65" y="415" font-family="Arial,sans-serif" font-size="18" fill="#16324f">3V3 → compatible OLED</text>
+<text x="65" y="453" font-family="Arial,sans-serif" font-size="18" fill="#16324f">GND → common ground</text>
+<rect x="700" y="140" width="450" height="235" rx="8" fill="#ecfdf5" stroke="#94a3b8"/>
+<text x="725" y="180" font-family="Arial,sans-serif" font-size="22" fill="#16324f">UART FINGERPRINT SENSOR</text>
+<text x="725" y="222" font-family="Arial,sans-serif" font-size="18" fill="#16324f">TX → GPIO16 (ESP32 RX)</text>
+<text x="725" y="260" font-family="Arial,sans-serif" font-size="18" fill="#16324f">RX ← GPIO17 (ESP32 TX)</text>
+<text x="725" y="298" font-family="Arial,sans-serif" font-size="18" fill="#16324f">GND → common ground</text>
+<text x="725" y="338" font-family="Arial,sans-serif" font-size="17" fill="#16324f">VCC → datasheet-specified regulated supply</text>
+<polyline points="340,260 600,260 600,215 700,215" fill="none" stroke="#2563eb" stroke-width="2"/>
+<text x="375" y="247" font-family="Arial,sans-serif" font-size="16" fill="#16324f">3.3 V-compatible UART</text>
+<polyline points="340,300 635,300 635,255 700,255" fill="none" stroke="#2563eb" stroke-width="2"/>
+<rect x="700" y="420" width="450" height="215" rx="8" fill="#fef3c7" stroke="#94a3b8"/>
+<text x="725" y="460" font-family="Arial,sans-serif" font-size="22" fill="#16324f">SSD1306 I²C OLED · 128 × 64</text>
+<text x="725" y="500" font-family="Arial,sans-serif" font-size="18" fill="#16324f">SDA → GPIO21     SCL → GPIO22</text>
+<text x="725" y="540" font-family="Arial,sans-serif" font-size="18" fill="#16324f">VCC → 3V3         GND → common ground</text>
+<text x="725" y="580" font-family="Arial,sans-serif" font-size="17" fill="#16324f">Address 0x3C proposed; verify by scanner</text>
+<polyline points="340,340 565,340 565,495 700,495" fill="none" stroke="#7c3aed" stroke-width="2"/>
+<polyline points="340,380 600,380 600,530 700,530" fill="none" stroke="#7c3aed" stroke-width="2"/>
+<rect x="40" y="550" width="600" height="85" rx="8" fill="#fff" stroke="#94a3b8"/>
+<text x="60" y="582" font-family="Arial,sans-serif" font-size="17" fill="#16324f">Sensor supply and UART logic voltage are separate specs.</text>
+<text x="60" y="614" font-family="Arial,sans-serif" font-size="17" fill="#16324f">Level conversion is required if UART is not 3.3 V-compatible.</text>
+<text x="40" y="680" font-family="Arial,sans-serif" font-size="18" fill="#16324f">Net labels specify connections. Sensor connector order and wire colours are not assumed.</text>
+<text x="40" y="718" font-family="Arial,sans-serif" font-size="18" fill="#16324f">Join required grounds. Do not tie a separate supply positive to a USB-powered board rail.</text>
+<text x="40" y="750" font-family="Arial,sans-serif" font-size="16" fill="#16324f">No biometric template, roster or real attendance record is included in this repository.</text>
+</svg>
