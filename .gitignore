@@ -1,0 +1,18 @@
+build/
+*.elf
+*.bin
+*.hex
+*.o
+*.log
+.vscode/
+.idea/
+__pycache__/
+.DS_Store
+Thumbs.db
+.env
+secrets.h
+# Private device exports / rosters; public blank worksheet uses another name
+attendance.csv
+attendance-*.csv
+roster*.csv
+*.fpt
